@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    color: #fff;
+}
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 180px;
+}
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5% 10%; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #aaa;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.time-segment {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    width:80px; 
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.time-segment span {
+    display: block;
+}
+
+#days, #hours, #minutes, #seconds {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #2A41C4;
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+.subscribe-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.social-icons a {
+    color: #2A41C4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 10% 5%; 
+        padding: 0;
+    }
+    h1 {
+        font-size: 2.5em; 
+    }
+    .tagline {
+        font-size: 1.2em; 
+    }
+    .time-segment {
+        width: auto; 
+        margin: 6px;
+    }
+    #days, #hours, #minutes, #seconds {
+        font-size: 1.5em; 
+    }
+    .subscribe-text {
+        font-size: 1em;
+    }
+}
